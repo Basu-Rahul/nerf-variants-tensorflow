@@ -19,3 +19,32 @@ for var in ["tinynerf","freenerf","simplenerf","frugalnerf"]:
     results[var]=run_variant(var,N_iters=4000,N_rand=1024)
 
 # Here change based on requirement
+```
+
+## 🧩 Implementation Notes
+- Uses **positional encoding**, **stratified sampling**, and **volume rendering**.
+- Supports configurable sample counts (`N_samples`) and MLP depths.
+- Final section renders all four trained variants on a **shared test view** for visual comparison.
+
+---
+
+## 🧠 References
+
+1. **TinyNeRF** – [Colab tutorial](https://github.com/yenchenlin/nerf-pytorch)  
+2. **FreeNeRF** – *Yu et al., “FreeNeRF: Improving Few-shot NeRF with Free-form Radiance Field Regularization,” ICCV 2023.*  
+3. **SimpleNeRF** – *Somraj et al., “SimpleNeRF: Lightweight NeRF via Simplified MLP and Positional Encoding,” 2023.*  
+4. **FrugalNeRF** – *Lin et al., “FrugalNeRF: Parameter-efficient Neural Radiance Fields,” CVPR 2025.*
+
+---
+
+## 📜 License
+This project is released under the **MIT License**.  
+Feel free to use, modify, and cite appropriately.
+
+---
+
+## 👤 Author
+Rahul Basu  
+📧 rahulbasutigps@gmail.com  
+
+
